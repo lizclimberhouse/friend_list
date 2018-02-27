@@ -1,0 +1,8 @@
+<h1>Friends</h1>
+<%= link_to 'Add New Friend', new_person_path %>
+<% @people.each do |person| %>
+  <h2><%= person.name %></h2>
+  <%= link_to 'Show Person', person_path(person) %>
+  <%= link_to 'Show Person', person_path(person) %>
+  <%= link_to 'Show Person', person_path(person) %>
+<% end %>

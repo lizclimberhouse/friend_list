@@ -1,0 +1,21 @@
+<%= form_for @person do |i| %>
+  <%= i.label :name %>
+  <%= i.text_field :name %>
+  <hr>
+  <%= i.label :age %>
+  <%= i.text_field :age %>
+  <hr>
+  <%= i.label :hair_color %>
+  <%= i.text_field :hair_color %>
+  <hr>
+  <%= i.label :eye_color %>
+  <%= i.text_field :eye_color %>
+  <hr>
+  <%= i.label :gender %>
+  <%= i.text_field :gender %>
+  <hr>
+  <%= i.label :friend_level %>
+  <%= i.text_field :friend_level %>
+  <hr>
+  <%= i.submit %>
+<% end %>
