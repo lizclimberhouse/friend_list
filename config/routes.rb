@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#home' # static_pages_controller => method is home
 
-  get '/friends', to: 'people#index' #static_pages_people => method is index
   get '/about', to: 'static_pages#about'
 
   resources :people, path: 'friends'
