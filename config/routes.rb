@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get '/about', to: 'static_pages#about'
 
-  resources :people, path: 'friends'
+  resources :people, path: 'friends' # this changes all the pages that were /people/.../... to friends/.../...
 
   # root "people#index" # need to set this as the root route 
   # resources :people
