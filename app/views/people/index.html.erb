@@ -1,8 +1,9 @@
 <h1>Friends</h1>
+<p>/friends</p>
 <%= link_to 'Add New Friend', new_person_path %>
 <% @people.each do |person| %>
   <h2><%= person.name %></h2>
   <%= link_to 'Show Person', person_path(person) %>
-  <%= link_to 'Show Person', person_path(person) %>
-  <%= link_to 'Show Person', person_path(person) %>
+  <%= link_to 'Edit', edit_person_path(person) %>
+  <%= link_to 'Delete', person, method: :delete %>
 <% end %>
